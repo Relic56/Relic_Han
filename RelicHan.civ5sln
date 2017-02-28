@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# ModBuddy Solution File, Format Version 11.00
+Project("{F5FC21B5-7CC2-458A-ABBA-992F515BBA20}") = "RelicHan", "RelicHan\RelicHan.civ5proj", "{239725DE-7846-4834-BDA3-A5835504C1DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|x86 = Default|x86
+		Deploy Only|x86 = Deploy Only|x86
+		Package Only|x86 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Default|x86.ActiveCfg = Default|x86
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Default|x86.Build.0 = Default|x86
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Deploy Only|x86.ActiveCfg = Deploy Only|x86
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Deploy Only|x86.Build.0 = Deploy Only|x86
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Package Only|x86.ActiveCfg = Package Only|x86
+		{239725DE-7846-4834-BDA3-A5835504C1DE}.Package Only|x86.Build.0 = Package Only|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
