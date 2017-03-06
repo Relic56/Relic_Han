@@ -8,7 +8,15 @@
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
     <Teaser>--placeholder--</Teaser>
-    <Description>--placeholder--</Description>
+    <Description>Chrisy15
+Neirai
+urdnot
+Uighur_Caesar
+PiGreat
+Zwei
+Killer
+Lung
+sensh</Description>
     <Authors>Ethan Yao</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -34,7 +42,39 @@
     <DeployMod>true</DeployMod>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="NewFolder1\" />
+    <Folder Include="Lua" />
+    <Folder Include="XML" />
+    <Folder Include="SQL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lua\Gaozu_Trait.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Silu_Yizhan.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Lua\Ji_Unit.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\DiploResponses.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\Gaozu.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\Gaozu_Trait.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\RelicHan.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>
