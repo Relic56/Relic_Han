@@ -151,5 +151,5 @@ VALUES		('TXT_KEY_CIV_RELIC_HAN_DESC',				'Han'),
 			('TXT_KEY_SPY_NAME_RELIC_HAN_9',			'Liu Yingke'),
 			('TXT_KEY_CIV5_RELIC_HAN_FACTOID_HEADING',	'Han Dynasty'),
 			('TXT_KEY_CIV5_RELIC_HAN_FACTOID_TEXT',		'Placeholder, please ignore'),
-			('TXT_KEY_CIV5_RELIC_HAN_HEADING_1',		'Placeholder, please ignore'),
+			('TXT_KEY_CIV5_RELIC_HAN_HEADING_1',		'Placeholder, please ignore');
 		
