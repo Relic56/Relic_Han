@@ -4,7 +4,7 @@
 --Basic definition
 INSERT INTO Units
 			(Class, Type,				Prereq Tech, Range, RangedCombat, Combat,	FaithCost, RequiresFaithPurchaseEnabled, Cost, Moves, CombatClass, Domain, DefaultUnitAI, Description,				Civilopedia,					Strategy,							Help,						MilitarySupport, MilitaryProduction, Pillage, ObsoleteTech, AdvancedStartCost, GoodyHutUpgradeUnitClass, CombatLimit, XPValueAttack, XPValueDefense, Conscription, UnitArtInfo,				UnitFlagAtlas,		UnitFlagIconOffset, PortraitIndex,	IconAtlas,			WorkRate)
-SELECT		 Class, 'UNIT_RELIC_JI',	Prereq Tech, Range, RangedCombat, Combat+2,	FaithCost, RequiresFaithPurchaseEnabled, Cost, Moves, CombatClass, Domain, DefaultUnitAT, 'TXT_KEY_UNIT_RELIC_JI',	'TXT_KEY_CIV5_RELIC_JI_TEXT',	'TXT_KEY_UNIT_RELIC_HAN_STRATEGY',	'TXT_KEY_RELIC_JI_HELP',	MilitarySupport, MilitaryProduction, Pillage, ObsoleteTech, AdvancedStartCost, GoodyHutUpgradeUnitClass, CombatLimit, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_RELIC_JI',	'RELIC_HAN_FLAG',	0,					2,				'RELIC_HAN_ATLAS',	WorkRate)
+SELECT		 Class, 'UNIT_RELIC_JI',	Prereq Tech, Range, RangedCombat, Combat+2,	FaithCost, RequiresFaithPurchaseEnabled, Cost, Moves, CombatClass, Domain, DefaultUnitAT, 'TXT_KEY_UNIT_RELIC_JI',	'TXT_KEY_CIV5_RELIC_JI_TEXT',	'TXT_KEY_UNIT_RELIC_HAN_STRATEGY',	'TXT_KEY_RELIC_JI_HELP',	MilitarySupport, MilitaryProduction, Pillage, ObsoleteTech, AdvancedStartCost, GoodyHutUpgradeUnitClass, CombatLimit, XPValueAttack, XPValueDefense, Conscription, 'ART_DEF_UNIT_RELIC_JI',	'RELIC_HAN_JI_FLAG',	0,					2,				'RELIC_HAN_ATLAS',	WorkRate)
 From Units WHERE (Type = 'UNIT_SPEARMAN');
 --Unit AI Type
 INSERT INTO UNIT_AITypes

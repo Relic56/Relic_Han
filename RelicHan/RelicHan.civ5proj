@@ -7,19 +7,19 @@
     <Guid>e01b5e0f-a114-4aa8-8df8-962ab5b74a6f</Guid>
     <ModVersion>1</ModVersion>
     <Stability>Alpha</Stability>
-    <Teaser>--placeholder--</Teaser>
-    <Description>Chrisy15
-Neirai
-urdnot
-Uighur_Caesar
-PiGreat
-Zwei
-Killer
-Lung
-sensh</Description>
-    <Authors>Ethan Yao</Authors>
-    <SpecialThanks>
-    </SpecialThanks>
+    <Teaser>Play as Emperor Gaozu, unifier of China and first ruler of Han!</Teaser>
+    <Description>Special thanks to:
+Chrisy15 for a lot of code help
+Neirai for an excellent coding solution
+urdnot for design 
+Uighur_Caesar for design
+PiGreat for design and Civ Icon
+Zwei for the UU model
+Killer for a map/base leaderscene
+DarthKyofu for design and an improved leaderscene
+senshidenshi for</Description>
+    <Authors>Relic56</Authors>
+    <SpecialThanks>Civ 5 Modding Helpline</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -28,7 +28,15 @@ sensh</Description>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>RelicHan</AssemblyName>
     <RootNamespace>RelicHan</RootNamespace>
-    <ModReferences />
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Sukritact's Events and Decisions</Name>
+        <Id>1f941088-b185-4159-865c-472df81247b2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
     <ModActions>
       <Action>
         <Set>OnModActivated</Set>
@@ -60,8 +68,22 @@ sensh</Description>
         <Type>UpdateDatabase</Type>
         <FileName>XML/RELIC_HAN_LS.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatability/Relic_Han_Decisions.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Art/RelicHanArtDefines.sql</FileName>
+      </Action>
     </ModActions>
     <ModProperties />
+    <ReloadUnitSystem>true</ReloadUnitSystem>
+    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -77,18 +99,11 @@ sensh</Description>
   <ItemGroup>
     <Folder Include="Art\" />
     <Folder Include="Lua" />
+    <Folder Include="Compatability" />
     <Folder Include="XML" />
     <Folder Include="SQL" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Art\Halberdier_China.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="Art\Halberdier_China_gloss.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
     <Content Include="Art\HanSpearman_China.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
@@ -105,9 +120,21 @@ sensh</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="Art\RelicHanArtDefines.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Art\Swordsman_China_gloss.dds">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatability\Relic_Han_Decisions.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatability\Relic_Han_Decisions.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Lua\Gaozu_Trait.lua">
       <SubType>Lua</SubType>
@@ -138,6 +165,10 @@ sensh</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="SQL\RelicHan.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="SQL\SiluYizhan.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

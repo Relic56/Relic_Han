@@ -156,7 +156,7 @@ function(pPlayer)
 				function(pPlayer, tData)
 					local sName = tData.Name	
 					if load(pPlayer, sKey) == true then
-						tTempDecisions[sKey].Desc = Locale.ConvertTextKey("TXT_KEY_DECISIONS_HUNSRANSOM_ENACTED_DESC", sName)
+						tTempDecisions[sKey].Desc = Locale.ConvertTextKey("TXT_KEY_DECISIONS_RELIC_HAN_HEQIN_ENACTED_DESC", sName)
 						return false, false, true
 					end
 					local pTeam = Teams[pPlayer:GetTeam()]
@@ -174,5 +174,10 @@ function(pPlayer)
 				end
 				)
 				tTempDecisions[sKey].DoFunc = (
-				function(pPlayer, 
+				function(pPlayer)
+					for eEvent, fFunc in pairs(DecisionsRelicHanHeqin.Monitors) do
+						eEvent.Remove(fFunc)
+						eEvent.Add(fFunc)
+					end
+					
 }
